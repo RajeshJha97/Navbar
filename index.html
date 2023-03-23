@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/6fd8217433.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Navbar</title>
+  </head>
+  <body>
+    <section class="nav-section">
+      <nav
+        class="flex items-center justify-between w-screen bg-zinc-300 h-16 md:justify-around md:h-20 md:gap-x-24"
+      >
+        <h1
+          class="text-2xl font-bold font-serif text-blue-900 ml-2 md:text-3xl md:ml-16 rotate-3 cursor-pointer hover:text-blue-700 duration-1000 hover:rotate-6"
+        >
+          Dummy
+        </h1>
+        <!-- medium navbar -->
+        <div class="hidden md:flex md:mr-20 md:space-x-48">
+          <div id="social mr-2">
+            <ul class="flex space-x-8">
+              <li>
+                <a href="#" class="">
+                  <i
+                    class="fa-2x fa-brands fa-twitter text-blue-500 hover:text-blue-700 duration-500 cursor-pointer hover:skew-x-12"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-2x fa-brands fa-instagram text-red-500 hover:text-red-700 duration-500 cursor-pointer hover:skew-x-12"
+                  ></i
+                ></a>
+              </li>
+              <li>
+                <a href="#"
+                  ><i
+                    class="fa-2x fa-brands fa-facebook text-blue-500 hover:text-blue-700 duration-500 cursor-pointer hover:skew-x-12"
+                  ></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <div id="options">
+            <ul class="flex space-x-4 font-serif">
+              <li
+                class="text-blue-900 font-bold hover:text-blue-700 hover:rotate-3 cursor-pointer truncate duration-500"
+              >
+                About Us
+              </li>
+              <li
+                class="text-blue-900 font-bold hover:text-blue-700 hover:rotate-3 cursor-pointer truncate duration-500"
+              >
+                Instagram
+              </li>
+              <li
+                class="text-blue-900 font-bold hover:text-blue-700 hover:rotate-3 cursor-pointer truncate duration-500"
+              >
+                Facebook
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- navbar ham button for small screen menu-->
+        <button class="mr-12 md:hidden" id="ham-menu">
+          <i
+            class="fa-2xl fa-solid fa-bars text-blue-500 hover:text-blue-700 hover:rotate-45 duration-500"
+          ></i>
+        </button>
+      </nav>
+      <!-- menu for small screen -->
+      <div
+        class="hidden duration-500 bg-zinc-300 w-screen h-auto md:hidden"
+        id="small-menu"
+      >
+        <!-- <div id="options" class="duration-1000"> -->
+        <ul
+          class="flex flex-col ml-2 text-blue-900 cursor-pointer font-serif font-semibold"
+        >
+          <li
+            class="hover:text-700 hover:bg-blue-100 duration-1000 mb-2 hover:rotate-1"
+          >
+            About Us
+          </li>
+          <li
+            class="hover:text-700 hover:bg-blue-100 duration-1000 mb-2 hover:rotate-1"
+          >
+            Services
+          </li>
+          <li
+            class="hover:text-700 hover:bg-blue-100 duration-1000 mb-2 hover:rotate-1"
+          >
+            Products
+          </li>
+        </ul>
+        <!-- </div> -->
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
